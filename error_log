@@ -1,0 +1,57 @@
+[09-Oct-2022 10:42:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/htj1664803316/public_html/config/config.php on line 152
+[09-Oct-2022 10:42:41 UTC] PHP Stack trace:
+[09-Oct-2022 10:42:41 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:42:41 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:2
+[09-Oct-2022 10:42:41 UTC] PHP   3. session_start() /home/htj1664803316/public_html/config/config.php:152
+[09-Oct-2022 10:43:01 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:43:01 UTC] PHP Stack trace:
+[09-Oct-2022 10:43:01 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:43:01 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:43:14 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:43:14 UTC] PHP Stack trace:
+[09-Oct-2022 10:43:14 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:43:14 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:43:57 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:43:57 UTC] PHP Stack trace:
+[09-Oct-2022 10:43:57 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:43:57 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:43:58 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:43:58 UTC] PHP Stack trace:
+[09-Oct-2022 10:43:58 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:43:58 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:56:43 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:56:43 UTC] PHP Stack trace:
+[09-Oct-2022 10:56:43 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:56:43 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:56:45 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:56:45 UTC] PHP Stack trace:
+[09-Oct-2022 10:56:45 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:56:45 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:58:08 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:58:08 UTC] PHP Stack trace:
+[09-Oct-2022 10:58:08 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:58:08 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 10:58:48 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 10:58:48 UTC] PHP Stack trace:
+[09-Oct-2022 10:58:48 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 10:58:48 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 11:01:28 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 11:01:28 UTC] PHP Stack trace:
+[09-Oct-2022 11:01:28 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 11:01:28 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 11:04:18 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 11:04:18 UTC] PHP Stack trace:
+[09-Oct-2022 11:04:18 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 11:04:18 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 11:07:05 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 11:07:05 UTC] PHP Stack trace:
+[09-Oct-2022 11:07:05 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 11:07:05 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 11:07:05 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 11:07:05 UTC] PHP Stack trace:
+[09-Oct-2022 11:07:05 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 11:07:05 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
+[09-Oct-2022 11:12:40 UTC] PHP Notice:  Undefined index: ctv in /home/htj1664803316/public_html/public/client/Nav.php on line 681
+[09-Oct-2022 11:12:40 UTC] PHP Stack trace:
+[09-Oct-2022 11:12:40 UTC] PHP   1. {main}() /home/htj1664803316/public_html/index.php:0
+[09-Oct-2022 11:12:40 UTC] PHP   2. require_once() /home/htj1664803316/public_html/index.php:6
