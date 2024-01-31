@@ -1,1 +1,1 @@
-## ai bấm vào làm chó chừ admin web
+## ai bấm vào làm chó trừ admin web
