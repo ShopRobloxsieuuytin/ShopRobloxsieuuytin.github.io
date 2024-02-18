@@ -1,29 +1,31 @@
+<?php
+if(isset($_GET['url'])){
+    $url = $_GET['url']; // Lấy giá trị của tham số 'url' từ URL
+    $hwid_pos = strpos($url, 'https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=='); // Tìm vị trí của chuỗi "https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=="
+    if ($hwid_pos !== false) {
+        $v = substr($url, $hwid_pos + strlen('https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID==')); // Lấy phần sau chuỗi "https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=="
+    } else {
+        $v = "Không tìm thấy chuỗi 'https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID==' trong URL.";
+    }
+}
+?>
 
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>thách bấm vào | ShopRobloxsieuuytin.github.io</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=a833c43d0feac06c85b5a838a99834e63979fca4">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-
-      
-
-      <h2 id="ai-bấm-vào-làm-chó-trừ-admin-web">ai bấm vào làm chó trừ admin web</h2>
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract HWID from URL</title>
+</head>
+<body>
+    <h1>Extract HWID from URL</h1>
+    <form method="GET" action="">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Submit</button>
+    </form>
+    <?php if(isset($v)): ?>
+        <h2><?php echo $v; ?></h2>
+    <?php endif; ?>
+</body>
 </html>
