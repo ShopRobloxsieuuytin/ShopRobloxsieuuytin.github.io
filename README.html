@@ -1,31 +1,31 @@
-<?php
-if(isset($_GET['url'])){
-    $url = $_GET['url']; // Lấy giá trị của tham số 'url' từ URL
-    $hwid_pos = strpos($url, 'https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=='); // Tìm vị trí của chuỗi "https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=="
-    if ($hwid_pos !== false) {
-        $v = substr($url, $hwid_pos + strlen('https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID==')); // Lấy phần sau chuỗi "https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID=="
-    } else {
-        $v = "Không tìm thấy chuỗi 'https://keysystem.fluxteam.net/android/checkpoint/start.php?HWID==' trong URL.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extract HWID from URL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL Parameter Example</title>
 </head>
 <body>
-    <h1>Extract HWID from URL</h1>
-    <form method="GET" action="">
-        <label for="url">Enter URL:</label>
-        <input type="text" id="url" name="url" required>
-        <button type="submit">Submit</button>
-    </form>
-    <?php if(isset($v)): ?>
-        <h2><?php echo $v; ?></h2>
-    <?php endif; ?>
+
+<p id="urlParam"></p>
+
+<script>
+window.onload = function() {
+  // Function to get URL parameter value by name
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+
+  // Get the value of the 'key' parameter from the URL
+  var keyParam = getUrlParameter('key');
+
+  // Display the value on the web page
+  document.getElementById('urlParam').textContent = "Value of 'key' parameter: " + keyParam;
+};
+</script>
+
 </body>
 </html>
