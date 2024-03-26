@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải nén File</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+
+<input type="file" id="file-input" />
+<button onclick="unzipFile()">Giải nén</button>
+
+<script>
+function unzipFile() {
+    // Lấy tệp từ input
+    const fileInput = document.getElementById('file-input');
+    if (fileInput.files.length === 0) {
+        alert('Vui lòng chọn một tệp để giải nén.');
+        return;
+    }
+    const file = fileInput.files[0];
+
+    // Sử dụng JSZip để giải nén tệp
+    JSZip.loadAsync(file)
+        .then(function(zip) {
+            // zip là một đối tượng có các tệp đã giải nén
+            Object.keys(zip.files).forEach(function(filename) {
+                zip.files[filename].async('string').then(function(fileData) {
+                    // fileData là nội dung của tệp đã giải nén
+                    console.log(`Nội dung của ${filename}:`, fileData);
+                    // Tại đây bạn có thể xử lý nội dung của tệp giải nén
+                    // Ví dụ: hiển thị nội dung tệp trong console hoặc trên trang web
+                });
+            });
+        }, function(e) {
+            alert('Có lỗi xảy ra trong quá trình giải nén tệp: ' + e.message);
+        });
+}
+</script>
+
+</body>
+</html>
